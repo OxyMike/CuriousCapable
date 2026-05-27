@@ -1,0 +1,2 @@
+# CuriousCapable
+CuriousCapable(Test)
