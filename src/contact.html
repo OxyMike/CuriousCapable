@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-text-size="normal" data-high-contrast="false" data-reduce-motion="false" data-theme="light" data-fonts="default">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Curious &amp; Capable</title>
+  <meta name="description" content="Book a workshop, ask a question, or schedule a private session. Curious & Capable is based in Central Florida." />
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-pages.css" />
+  <link rel="stylesheet" href="styles-merge.css" />
+</head>
+<body>
+  <main id="main-content">
+
+    <section class="page-header" aria-labelledby="contact-heading">
+      <div class="container container--narrow text-center">
+        <p class="section-label" style="justify-content:center;">Get in touch</p>
+        <h1 id="contact-heading">Say hello. <span style="color:var(--color-terracotta);font-style:italic;">We'd love to hear from you.</span></h1>
+        <p class="page-header__sub">Book a seat in an upcoming workshop, ask a quick question, or arrange a private session for you and a friend or two. We reply within one business day.</p>
+      </div>
+    </section>
+
+    <!-- FORM + INFO -->
+    <section class="section section--white" aria-label="Contact details">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-form-wrap reveal">
+            <h2>Send Michael a message</h2>
+            <p style="color:var(--color-text-muted);margin-bottom:2rem;">Filling this in is the easiest way to reach us. Prefer the phone? We'd love that too: <a href="tel:+13212343989" style="color:var(--color-terracotta);font-weight:600;">(321) 234-3989</a>.</p>
+
+            <div id="form-notice" class="form-notice" role="status" aria-live="polite" tabindex="-1"></div>
+
+            <form id="contact-form" novalidate>
+              <!-- Web3Forms config -->
+              <input type="hidden" name="access_key" value="1884aae6-b4a5-445b-bcd8-3ac2acf1aaba" />
+              <input type="hidden" name="subject" value="New inquiry from Curious & Capable website" />
+              <input type="hidden" name="from_name" value="Curious & Capable website" />
+              <!-- Honeypot for bots -->
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-name">Your name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-name" name="name" autocomplete="name" required />
+                  <span class="field-error" id="contact-name-error" role="alert"></span>
+                </div>
+                <div class="form-field">
+                  <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="contact-email" name="email" autocomplete="email" required />
+                  <span class="field-error" id="contact-email-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-phone">Phone (optional)</label>
+                <input type="tel" id="contact-phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-type">I'm reaching out because… <span aria-hidden="true">*</span></label>
+                <select id="contact-type" name="type" required>
+                  <option value="">Please choose one</option>
+                  <option value="workshop">I'd like to request a workshop for my community</option>
+                  <option value="private">I'd like to arrange a private session</option>
+                  <option value="group">I host a community group &amp; want to partner</option>
+                  <option value="question">I have a quick technology question</option>
+                  <option value="other">Something else entirely</option>
+                </select>
+                <span class="field-error" id="contact-type-error" role="alert"></span>
+              </div>
+
+              <div class="form-row" id="community-fields" hidden>
+                <div class="form-field">
+                  <label for="contact-community">Community name (optional)</label>
+                  <input type="text" id="contact-community" name="community" autocomplete="organization" />
+                </div>
+                <div class="form-field">
+                  <label for="contact-residents">About how many residents? (optional)</label>
+                  <input type="text" id="contact-residents" name="residents" inputmode="numeric" placeholder="e.g. 8" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-workshop">Which workshop interests you? (optional)</label>
+                <select id="contact-workshop" name="workshop">
+                  <option value="">I'm not sure yet</option>
+                  <option>01 · Smartphone Basics</option>
+                  <option>02 · Video Calling</option>
+                  <option>03 · Online Safety &amp; Scams</option>
+                  <option>04 · Email Essentials</option>
+                  <option>05 · Photos &amp; Memories</option>
+                  <option>06 · Online Shopping &amp; Banking</option>
+                  <option>07 · Health Apps &amp; Telehealth</option>
+                  <option>08 · Group Texting &amp; Messaging</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Your message <span aria-hidden="true">*</span></label>
+                <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us a little about what you'd like to learn, or anything else on your mind."></textarea>
+                <span class="field-error" id="contact-message-error" role="alert"></span>
+              </div>
+
+              <div class="form-field form-field--check">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="contact-newsletter" name="newsletter" />
+                  <span>Add me to the twice-a-month tips email. (You can unsubscribe anytime.)</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg form-submit">Send message →</button>
+              <p style="font-size:.92rem;color:var(--color-text-muted);margin-top:1.5rem;">By sending this, you agree we can email or call you back. We never share your details. Ever.</p>
+            </form>
+          </div>
+
+          <aside class="contact-info reveal" aria-label="Other ways to reach us">
+            <div class="contact-info__card">
+              <h3>Other ways to reach us</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-list__icon" aria-hidden="true">✉️</span>
+                  <div>
+                    <strong>Email</strong>
+                    <a href="mailto:curiouscapable@gmail.com">curiouscapable@gmail.com</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-list__icon" aria-hidden="true">📞</span>
+                  <div>
+                    <strong>Phone</strong>
+                    <a href="tel:+13212343989">(321) 234-3989</a>
+                    <small>Voicemail goes to email, so leave a message.</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-list__icon" aria-hidden="true">📍</span>
+                  <div>
+                    <strong>Where we help</strong>
+                    Libraries · Senior centers · Assisted living &amp; retirement communities · Your own home
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-list__icon" aria-hidden="true">🕘</span>
+                  <div>
+                    <strong>Office hours</strong>
+                    Monday – Friday<br/>
+                    9:00am – 5:00pm Eastern
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-info__card contact-info__card--accent">
+              <h3>Bringing a friend?</h3>
+              <p>A second seat for someone you bring to any workshop is half-price, every time. Just mention them in your message.</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--cream" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <div class="text-center mb-5">
+          <p class="section-label">Frequently asked</p>
+          <h2 id="faq-heading">Common questions, <span style="color:var(--color-terracotta);font-style:italic;">honestly answered.</span></h2>
+        </div>
+        <div class="faq">
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>What if I'm a complete beginner? Like, I just got my first smartphone?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>You're exactly who Smartphone Basics (Workshop 01) was built for. We start at the very beginning: turning the phone on, holding it without panic, finding the home screen. There's no skill assumed, ever.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Do I bring my own phone, or do you provide one?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>Always bring your own. The whole point is that you walk out comfortable with <em>your</em> device, with <em>your</em> apps and <em>your</em> family in the contacts. iPhone, Android, iPad. Bring whatever you actually use.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>What does it cost? Is there financial assistance?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>Community workshops are $180 per 90-minute session, for up to 10 residents. Book any four and save 15%. Private sessions at home are $90 for 60 minutes within Polk County. We also run free and reduced-fee sessions through senior centers and faith communities. Please ask, no awkwardness on either side.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Can you come to my community group, church, or HOA?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>Yes, and we love doing this. We tailor the topic to the group, bring everything we need, and offer reduced rates for nonprofit groups and faith communities. Send us a note with your group size and which topic interests you.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>What if I sign up and then have to cancel?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>Life happens. Cancel up to 48 hours before the workshop for a full refund or a free transfer to any future date. After that we'll do our best to reschedule you, no charge.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>I learn slowly. Will I be able to keep up?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>This is the most important promise we make: <strong>the class moves at the pace of the room.</strong> If something needs three explanations, it gets three explanations. If it needs ten, it gets ten. Every workshop also includes a follow-up phone call so the question you only thought of later still gets answered.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Are private 1-on-1 sessions available?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>Yes. Private sessions are $90 for 60 minutes, in-person within Polk County. Many people like to start with one private session to feel ready, then join a group workshop. Just say the word in your message.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" data-open="false">
+            <button class="faq__trigger" aria-expanded="false">
+              <span>Is this really worth it? Couldn't my grandkids just teach me?</span>
+              <span class="faq__chev" aria-hidden="true"></span>
+            </button>
+            <div class="faq__panel">
+              <p>They could! And many of our students still call them with the fun stuff. But there's a particular kind of learning that's hard to do with someone who loves you and is also impatient, and easy to do with a calm, prepared instructor and a roomful of people in the same boat. That's our whole thing.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="contact-cta-heading">
+      <div class="cta-banner__inner">
+        <p class="section-label">Or skip the form</p>
+        <h2 id="contact-cta-heading">Just <span class="accent">give us a call.</span></h2>
+        <p>It's a real phone, answered by a real person, and we genuinely don't mind questions.</p>
+        <div class="cta-banner__buttons">
+          <a href="tel:+13212343989" class="btn btn--white btn--lg">📞 (321) 234-3989</a>
+          <a href="mailto:curiouscapable@gmail.com" class="btn btn--outline-white btn--lg">✉ curiouscapable@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="chrome.js"></script>
+  <script src="scripts.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#F5ECD7">
+  <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+    <rect width="120" height="80" fill="#F5ECD7"/>
+    <rect x="20" y="12" width="80" height="56" rx="6" fill="#143f3f"/>
+    <rect x="30" y="22" width="60" height="6" rx="3" fill="rgba(255,255,255,0.5)"/>
+    <rect x="30" y="32" width="60" height="10" rx="3" fill="rgba(255,255,255,0.15)"/>
+    <rect x="30" y="46" width="60" height="10" rx="3" fill="rgba(255,255,255,0.15)"/>
+    <rect x="38" y="58" width="44" height="7" rx="3.5" fill="#C4623A"/>
+  </svg>
+</template>
+</body>
+</html>
