@@ -114,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Active nav ──
-  const cur = window.location.pathname.split('/').pop() || 'index.html';
+  let cur = window.location.pathname.split('/').pop() || 'index.html';
+  if (/^post-/.test(cur)) cur = 'blog.html';
   document.querySelectorAll('.nav__links a').forEach(a => {
     const h = a.getAttribute('href');
     if (h === cur || (cur === '' && h === 'index.html')) a.setAttribute('aria-current', 'page');
