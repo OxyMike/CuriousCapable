@@ -115,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Active nav ──
   let cur = window.location.pathname.split('/').pop() || 'index.html';
+  if (!cur.includes('.')) cur += '.html'; // Vercel cleanUrls serves /services, not /services.html
   if (/^post-/.test(cur)) cur = 'blog.html';
   document.querySelectorAll('.nav__links a').forEach(a => {
     const h = a.getAttribute('href');

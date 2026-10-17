@@ -22,6 +22,7 @@
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="shop.html">Shop</a></li>
+            <li><a href="picks.html">Tech Picks</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -61,6 +62,7 @@
               <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services &amp; Workshops</a></li>
               <li><a href="shop.html">Shop</a></li>
+              <li><a href="picks.html">Tech Picks</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>

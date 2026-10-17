@@ -64,5 +64,5 @@ Ratings live in `src/picks-data.js` (the `learn` and `can` numbers on each pick)
 1. Add the Skylight Calendar link in `src/picks-data.js` (the only `link: "#"` left).
 2. Swap in Amazon Associates links, then set `affiliateLinks: true` at the top of `src/picks-data.js`. That turns on both commission disclosures.
 3. Click every button on the page once.
-4. Add "Tech Picks" to the menu in `src/chrome.js`, between Shop and Blog, linking to `picks.html`. Add the same link to the footer's Explore list.
+4. ~~Add "Tech Picks" to the menu and footer~~ (done on the `short-list` branch).
 5. Merge the `short-list` branch into `main` and push. Pushing `main` publishes the site.
