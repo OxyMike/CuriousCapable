@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Short List | Curious &amp; Capable</title>
+  <meta name="description" content="A short, plain-language list of phones, tablets, computers and home devices chosen for adults 60+. Honest star ratings, no sales pressure." />
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-pages.css" />
+  <link rel="stylesheet" href="styles-merge.css" />
+  <link rel="stylesheet" href="styles-shop.css" />
+  <style>
+    .pick-why { border-top: 1.5px solid var(--color-border); padding-top: 1rem; margin-top: 1rem; font-size: .95rem; }
+    .pick-why strong { color: var(--color-teal-dark); display: block; font-family: 'Nunito', sans-serif; font-weight: 800; }
+    .pick-scales { margin-top: 1rem; display: grid; gap: .35rem; }
+    .pick-scale { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-weight: 700; font-size: .95rem; }
+    .pick-scale__stars { color: var(--color-terracotta); font-size: 1.25rem; letter-spacing: .1em; white-space: nowrap; }
+    .pick-scale__off { color: var(--color-border); }
+    .pick-scale__half { background: linear-gradient(90deg, var(--color-terracotta) 50%, var(--color-border) 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .pick-options { margin-top: 1rem; display: grid; gap: .5rem; }
+    .pick-options__head { font-family: 'Nunito', sans-serif; font-weight: 800; color: var(--color-teal-dark); margin: 0; }
+    .pick-option { display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: .6rem 1.1rem; border: 1.5px solid var(--color-terracotta); border-radius: 999px; color: var(--color-terracotta-dark); font-weight: 700; text-decoration: none; }
+    .pick-option:hover { background: var(--color-terracotta-light); }
+    .pick-options__note { font-size: .85rem; color: var(--color-text-muted); margin: .25rem 0 0; }
+    .picks-intro { padding-block: 3rem; }
+    .rate-summary { max-width: 68ch; margin: 0 auto; display: grid; gap: .5rem; }
+    .rate-summary p { margin: 0; }
+    .rate-summary strong { color: var(--color-teal-dark); }
+    .rate-summary .star { color: var(--color-terracotta); }
+    .rate-details { max-width: 68ch; margin: 1rem auto 0; }
+    .rate-details[open] { max-width: none; }
+    .rate-details summary { max-width: 68ch; margin: 0 auto; cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: .5rem; font-family: 'Nunito', sans-serif; font-weight: 800; color: var(--color-terracotta-dark); }
+    .rate-details summary { list-style: none; }
+    .rate-details summary::-webkit-details-marker { display: none; }
+    .rate-details summary::before { content: "▸"; display: inline-block; transition: transform .2s ease; }
+    .rate-details[open] summary::before { transform: rotate(90deg); }
+    .rate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--gap-lg); margin-top: 1rem; }
+    .rate-card { background: var(--color-cream); border: 1.5px solid var(--color-border); border-radius: var(--radius-lg); padding: 2rem; }
+    .rate-list { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
+    .rate-list li { display: flex; align-items: center; gap: .75rem; }
+    .rate-list .pick-scale__stars { min-width: 7.5rem; }
+    .rate-note { margin-top: 1rem; font-size: .95rem; color: var(--color-text-muted); }
+    .picks-disclosure { max-width: 68ch; margin: 0 auto; font-size: .95rem; color: var(--color-text-muted); }
+    .picks-intro .picks-disclosure { margin-top: 1.25rem; }
+    .picks-filters { margin: 2rem 0 0; }
+    .picks-outro .picks-disclosure { text-align: center; }
+  </style>
+</head>
+<body>
+  <main id="main-content">
+
+    <!-- PAGE HEADER -->
+    <section class="page-header" aria-labelledby="picks-heading">
+      <div class="container container--narrow text-center">
+        <p class="section-label" style="justify-content:center;">The Short List</p>
+        <h1 id="picks-heading">The tech we'd hand our <span style="color:var(--color-terracotta);font-style:italic;">own parents.</span></h1>
+        <p class="page-header__sub">No top-ten lists, no sales pressure. Just a handful of phones, tablets and home devices chosen for big text, simple menus and an easy first day, with a plain reason for every pick.</p>
+      </div>
+    </section>
+
+    <!-- PROMISE STRIP -->
+    <section class="shop-assurance" aria-label="How we choose">
+      <div class="shop-assurance__inner">
+        <span class="shop-assurance__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 3.5V12c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6.5L12 3z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Big text and simple menus
+        </span>
+        <span class="shop-assurance__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.2"/><path d="M8 12h8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          Commissions never decide the list
+        </span>
+        <span class="shop-assurance__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          Easy to use the day it arrives
+        </span>
+      </div>
+    </section>
+
+    <!-- HOW WE RATE + DISCLOSURE + CATEGORY BUTTONS (method must match docs/rating-guide.md) -->
+    <section class="section section--white picks-intro" aria-labelledby="rate-heading">
+      <div class="container">
+        <h2 id="rate-heading" class="sr-only">How to read the stars</h2>
+        <div class="rate-summary">
+          <p><span class="star" aria-hidden="true">★</span> <strong>Easy to learn:</strong> how quickly you'll go from opening the box to using it on your own, setup included.</p>
+          <p><span class="star" aria-hidden="true">★</span> <strong>Can do:</strong> how many of ten everyday jobs it handles. Only do-it-all devices get this one.</p>
+        </div>
+
+        <details class="rate-details">
+          <summary>How we rate</summary>
+          <div class="rate-grid">
+            <div class="rate-card">
+              <h3>Easy to learn</h3>
+              <p>How long from opening the box until you can do the main job on your own? Setup counts, so a pick that needs a helper to get going earns fewer stars.</p>
+              <ul class="rate-list">
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★★★</span> The first day, no lesson needed</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★★<span class="pick-scale__off">★</span></span> After one short lesson</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★<span class="pick-scale__off">★★</span></span> After about a week of use</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★<span class="pick-scale__off">★★★</span></span> After several weeks of practice</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★<span class="pick-scale__off">★★★★</span></span> Needs ongoing help</li>
+              </ul>
+            </div>
+            <div class="rate-card">
+              <h3>Can do</h3>
+              <p>How many of ten everyday jobs can it handle? Calls, texts, video calls, photos, email, the web, shopping and banking, health apps, entertainment, and reminders. A job it only partly does counts as half.</p>
+              <ul class="rate-list">
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★★★</span> 9 to 10 jobs</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★★<span class="pick-scale__off">★</span></span> 7 to 8 jobs</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★★<span class="pick-scale__off">★★</span></span> 5 to 6 jobs</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★★<span class="pick-scale__off">★★★</span></span> 3 to 4 jobs</li>
+                <li><span class="pick-scale__stars" aria-hidden="true">★<span class="pick-scale__off">★★★★</span></span> 1 to 2 jobs</li>
+              </ul>
+              <p class="rate-note">A night light that does one job well shouldn't lose stars for it, so single-purpose items only get "Easy to learn."</p>
+            </div>
+          </div>
+          <p class="rate-note" style="text-align:center;">Our honest judgment, not a lab test.</p>
+        </details>
+
+        <p class="picks-disclosure" data-affiliate-note>Some links earn us a small commission, at no extra cost to you. It never decides the list.</p>
+
+        <div class="workshop-filters picks-filters" id="short-list-filters" role="group" aria-label="Show picks by category"></div>
+      </div>
+    </section>
+
+    <!-- THE PICKS: built by picks.js from picks-data.js -->
+    <div id="short-list">
+      <noscript><p class="picks-disclosure" style="text-align:center;padding:3rem 1rem;">Turn on JavaScript in your browser to see the list.</p></noscript>
+    </div>
+
+    <!-- DISCLOSURE -->
+    <section class="section section--sand picks-outro" aria-label="How we earn" data-affiliate-note>
+      <p class="picks-disclosure">Honest note: some links on this page earn Curious &amp; Capable a small commission, at no extra cost to you. It never decides what goes on the list. If we wouldn't hand it to our own parents, it isn't here.</p>
+    </section>
+
+  </main>
+  <script src="picks-data.js"></script>
+  <script src="picks.js"></script>
+  <script src="chrome.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
