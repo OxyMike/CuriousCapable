@@ -58,3 +58,11 @@ Ratings live in `src/picks-data.js` (the `learn` and `can` numbers on each pick)
 3. Commissions never decide whether something makes the list.
 4. For a category card with several options (night lights, day clocks, TV headsets), list at most three. Label each with a checkable fact from the listing ("Battery powered," "10-inch screen"), never a judgment ("Softest glow") until it has been tested hands-on. Untested options carry the note "Chosen from buyer reviews. Our own hands-on test is coming."
 5. Re-check every pick each quarter: still sold, links still work, ratings still fair, update the "Updated" date.
+
+## Launch checklist
+
+1. Add the Skylight Calendar link in `src/picks-data.js` (the only `link: "#"` left).
+2. Swap in Amazon Associates links, then set `affiliateLinks: true` at the top of `src/picks-data.js`. That turns on both commission disclosures.
+3. Click every button on the page once.
+4. Add "Tech Picks" to the menu in `src/chrome.js`, between Shop and Blog, linking to `picks.html`. Add the same link to the footer's Explore list.
+5. Merge the `short-list` branch into `main` and push. Pushing `main` publishes the site.
