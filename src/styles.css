@@ -325,7 +325,7 @@ html[data-theme="dark"] .nav { background: rgba(20,19,15,.92); }
 .nav__links a {
   font-family: var(--font-display); font-weight: 700; font-size: .98rem;
   color: var(--color-text); text-decoration: none;
-  padding: .55rem 1rem;
+  padding: .55rem .7rem;
   border-radius: 999px;
   transition: background .2s, color .2s;
   min-height: 44px; display: inline-flex; align-items: center;
@@ -350,7 +350,7 @@ html[data-theme="dark"] .nav__links a[aria-current="page"] { background: var(--c
 .nav__hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav__hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .nav__hamburger { display: flex; }
   .nav__menu {
     display: none; position: absolute; top: var(--nav-height); left: 0; right: 0;

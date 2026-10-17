@@ -4,10 +4,10 @@
    ============================================================ */
 
 /* ── Desktop nav layout (styles.css only sets flex inside the
-   max-960px media query, so the menu defaults to display:block
+   max-1180px media query, so the menu defaults to display:block
    and the CTA stacks below the links). Restore inline flex at
    desktop only; mobile rules in styles.css still take over. ── */
-@media (min-width: 961px) {
+@media (min-width: 1181px) {
   .nav__menu { display: flex; align-items: center; gap: 1rem; }
 }
 
